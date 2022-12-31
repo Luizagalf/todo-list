@@ -6,9 +6,7 @@ export const store: Store<{
   tasks: Task[];
 }> = new Vuex.Store({
   state: {
-    tasks: [
-      { id: uuid.v4(), title: "fv", description: "vf", status: false }
-    ] as Task[]
+    tasks: [] as Task[]
   },
   getters: {
     tasks(state: { tasks: Task[] }): Task[] {
@@ -44,7 +42,11 @@ export const store: Store<{
       },
       task: Task
     ): void {
-      state.tasks = [...state.tasks, task];
+      if (state.tasks.length) {
+        state.tasks = [...state.tasks, task];
+      } else {
+        state.tasks = [task];
+      }
     },
 
     deleteTask(
