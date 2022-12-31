@@ -1,0 +1,19 @@
+<div
+  class="tasksOneWrapper"
+  :style="{ backgroundColor: model.status ? `#8B9D77` : `#EDC5AB`}"
+>
+  <div class="tasksOne">
+    <div>
+      <h4>{{model.title}}</h4>
+      <p>{{model.description}}</p>
+    </div>
+    <div class="tasksOne__buttons">
+      <button @click="setDoneTask(model)">
+        <span class="material-symbols-outlined">done</span>
+      </button>
+      <button @click="deleteTask(model)">
+        <span class="material-symbols-outlined">delete</span>
+      </button>
+    </div>
+  </div>
+</div>

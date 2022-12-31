@@ -1,0 +1,19 @@
+@import "src/assets/main.scss";
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+@media (max-width: $phone) {
+  .tasks {
+    width: 100%;
+
+    li {
+      width: 100%;
+    }
+  }
+}

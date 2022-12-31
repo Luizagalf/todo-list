@@ -1,0 +1,18 @@
+<form class="form" @submit.prevent="onAddTask">
+  <div>
+    <input type="text" placeholder="Title" v-model="form.title" />
+    <!-- <p v-if="v$.form.title.$invalid">{{v$.form.title.$error}}</p> -->
+    <!-- <p>{{ v$.form.title }}</p>
+    <p v-for="error of v$.form.title.$errors">{{error}}</p> -->
+  </div>
+  <div>
+    <textarea placeholder="Description" v-model="form.description" />
+    <p v-if="v$.form.description.$invalid">
+      {{v$.form.description.$error.$message }}
+    </p>
+  </div>
+
+  <button type="submit" :disabled="v$.form.$invalid" class="form__btn">
+    Add new task
+  </button>
+</form>

@@ -1,24 +1,27 @@
-# todo-list
+# Description
 
-## Project setup
-```
-npm install
-```
+To do list with localStorage.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Apative layout
+- Form with validation
+- Adding, saving, deleting and marking tasks in localStorage
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Technologies:
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Vue
+- Typescript
+- Vuex
+- Lodash
+- Sass
+- Vuelidate
+- Vue-uuid
+- Eslint, prettier
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# To start the project, you need to run next commands:
+
+- `npm i`
+- `npm run serve`
+
+# My contacts:
+
+Galyautdinova Luiza, luizagalf@gmail.com

@@ -1,0 +1,60 @@
+@import "src/assets/main.scss";
+
+.tasksOneWrapper {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06),
+    0px 2px 8px rgba(0, 140, 255, 0.1);
+  border-radius: 8px;
+}
+
+.tasksOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  height: calc(100% - 20px);
+
+  h4 {
+    text-align: center;
+    word-break: break-word;
+  }
+
+  p {
+    word-break: break-word;
+    padding: 10px 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+
+    button {
+      border: none;
+      padding: 0;
+
+      span {
+        border-radius: 5px;
+        border: 1px solid $darkGreen;
+        padding: 5px;
+        background-color: $lightGray;
+      }
+
+      &:hover {
+        span {
+          box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.1),
+            inset -4px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .tasksOneWrapper {
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+  }
+}
